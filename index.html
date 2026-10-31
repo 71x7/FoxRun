@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Fox Run: un runner infinito en el navegador. Corre, salta y esquiva." />
+    <meta name="theme-color" content="#0f1720" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230f1720'/%3E%3Cpath d='M12 18l12 8h16l12-8-2 22-18 12-18-12z' fill='%23e8731a'/%3E%3Cpath d='M22 38h20l-10 14z' fill='%23fff4e6'/%3E%3C/svg%3E" />
+    <title>Fox Run</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <h1>Fox <span>Run</span></h1>
+        <p>Corre, salta y esquiva. ¿Hasta dónde llegas?</p>
+      </header>
+
+      <section class="card" id="wrap">
+        <canvas id="game" width="600" height="150" aria-label="Juego Fox Run"></canvas>
+        <button class="icon" id="mute" aria-label="Activar o desactivar sonido">🔊</button>
+      </section>
+
+      <div class="controls">
+        <button id="duck">Agacharse</button>
+        <button id="jump">Saltar</button>
+      </div>
+
+      <p class="hint">
+        <kbd>Espacio</kbd> o <kbd>↑</kbd> saltar · <kbd>↓</kbd> agacharse · <kbd>M</kbd> sonido
+      </p>
+    </main>
+
+    <footer class="footer">
+      <a href="https://github.com/71x7" target="_blank" rel="noreferrer">github.com/71x7</a>
+    </footer>
+
+    <script src="game.js"></script>
+  </body>
+</html>
